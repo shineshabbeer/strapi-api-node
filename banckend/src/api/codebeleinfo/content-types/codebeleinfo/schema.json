@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "codebeleinfos",
+  "info": {
+    "singularName": "codebeleinfo",
+    "pluralName": "codebeleinfos",
+    "displayName": "codebeleinfo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": true,
+      "unique": true
+    }
+  }
+}
