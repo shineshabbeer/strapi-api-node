@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employes",
+  "info": {
+    "singularName": "employe",
+    "pluralName": "employes",
+    "displayName": "employe"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 15,
+      "minLength": 4
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "codeinfos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::codeinfo.codeinfo",
+      "inversedBy": "employes"
+    }
+  }
+}

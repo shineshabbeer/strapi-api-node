@@ -25,6 +25,12 @@
     "body": {
       "type": "richtext",
       "required": true
+    },
+    "employes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::employe.employe",
+      "inversedBy": "codeinfos"
     }
   }
 }
