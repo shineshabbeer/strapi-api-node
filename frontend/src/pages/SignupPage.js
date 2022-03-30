@@ -1,21 +1,21 @@
 import React from 'react'
 import { Link, Grid, Paper, Avatar, TextField, Button, Typography } from '@material-ui/core'
-import LockOpenIcon from '@material-ui/icons/LockOpen';
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 
-export default function ReviewDetails() {
-    const paperStyle = { padding: 20, height: '70vh', width: 280, margin: '20px auto', backgroundColor: 'green' }
+export default function SignupPage() {
+    const paperStyle = { padding: 20, height: '70vh', width: 300, margin: '0 auto', backgroundColor: 'lightgreen' }
     const avataracolor = { backgroundColor: "green" }
     const btnstyles = { margin: '8px 0' }
     return (
         <Grid>
-            <Paper evaluation={10} style={paperStyle}>
+            <Paper style={paperStyle}>
                 <Grid align="center">
-                    <Avatar style={avataracolor}><LockOpenIcon /></Avatar>
+                    <Avatar style={avataracolor}><AddCircleIcon /></Avatar>
                     <h2>Sign Up</h2>
                 </Grid>
                 <TextField label="Name" placeholder="Enter Ur Name" fullWidth required />
